@@ -30,7 +30,6 @@ public class Principal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnMeusEventos = new javax.swing.JButton();
         btnCriarEvento = new javax.swing.JButton();
-        btnConvites = new javax.swing.JButton();
 
         jLabel1.setText("EVENTOS");
 
@@ -38,21 +37,19 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 255));
 
-        btnMeusEventos.setText("Meus eventos");
+        btnMeusEventos.setText("Livros Cadastrados");
         btnMeusEventos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMeusEventosActionPerformed(evt);
             }
         });
 
-        btnCriarEvento.setText("Criar evento");
+        btnCriarEvento.setText("Cadastro De Livro");
         btnCriarEvento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCriarEventoActionPerformed(evt);
             }
         });
-
-        btnConvites.setText("Convites");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -62,9 +59,8 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnMeusEventos, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnConvites, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCriarEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 469, Short.MAX_VALUE))
+                .addGap(0, 473, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -73,9 +69,7 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(btnCriarEvento)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnMeusEventos)
-                .addGap(18, 18, 18)
-                .addComponent(btnConvites)
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,13 +87,13 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCriarEventoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCriarEventoActionPerformed
-        criarEventos ce1 = new criarEventos();
+        CadastroDeLivros ce1 = new CadastroDeLivros();
         ce1.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnCriarEventoActionPerformed
 
     private void btnMeusEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMeusEventosActionPerformed
-        meusEventos me1 = new meusEventos();
+        MeusLivros me1 = new MeusLivros();
         me1.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMeusEventosActionPerformed
@@ -140,7 +134,6 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnConvites;
     private javax.swing.JButton btnCriarEvento;
     private javax.swing.JButton btnMeusEventos;
     private javax.swing.JLabel jLabel1;
