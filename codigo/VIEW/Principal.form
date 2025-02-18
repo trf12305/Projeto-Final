@@ -54,10 +54,9 @@
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnMeusEventos" min="-2" pref="133" max="-2" attributes="0"/>
-                      <Component id="btnConvites" min="-2" pref="137" max="-2" attributes="0"/>
                       <Component id="btnCriarEvento" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="0" pref="469" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="473" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -68,9 +67,7 @@
                   <Component id="btnCriarEvento" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnMeusEventos" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnConvites" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="276" max="32767" attributes="0"/>
+                  <EmptySpace pref="317" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -78,7 +75,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnMeusEventos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Meus eventos"/>
+            <Property name="text" type="java.lang.String" value="Livros Cadastrados"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMeusEventosActionPerformed"/>
@@ -86,16 +83,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCriarEvento">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Criar evento"/>
+            <Property name="text" type="java.lang.String" value="Cadastro De Livro"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCriarEventoActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnConvites">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Convites"/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
